@@ -21,9 +21,6 @@ import {
   mongodb,
   git,
   figma,
-  carrent,
-  jobit,
-  tripguide,
   disaster,
   keylogger,
   urban
