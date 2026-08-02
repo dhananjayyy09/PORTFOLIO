@@ -24,6 +24,9 @@ import {
   carrent,
   jobit,
   tripguide,
+  disaster,
+  keylogger,
+  urban
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
@@ -146,7 +149,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: disaster,
     sourceCodeLink: "https://github.com/dhananjayyy09/Disaster-Management-System",
   },
   {
@@ -167,7 +170,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: keylogger,
     sourceCodeLink: "https://github.com/dhananjayyy09/Invisible-Keylogger-Shield",
   },
   {
@@ -188,7 +191,7 @@ const projects: TProject[] = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: urban,
     sourceCodeLink: "https://github.com/dhananjayyy09/Urban-Guardian",
   },
 ];

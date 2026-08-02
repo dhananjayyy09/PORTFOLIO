@@ -29,6 +29,9 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import disaster from "./disaster.png";
+import keylogger from "./keylogger.png";
+import urban from "./urban.png"
 
 export {
   logo,
@@ -59,4 +62,7 @@ export {
   carrent,
   jobit,
   tripguide,
+  disaster,
+  keylogger,
+  urban
 };
