@@ -40,13 +40,16 @@ type TConfig = {
 
 export const config: TConfig = {
   html: {
-    title: "John Doe — 3D Portfolio",
-    fullName: "John Doe",
-    email: "johndoe@mail.com",
+    title: "Dhananjay Gupta | Software Engineer",
+    fullName: "Dhananjay Gupta",
+    email: "djgupta1309@gmail.com",
   },
   hero: {
-    name: "John Doe",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    name: "Dhananjay Gupta",
+    p: [
+      "Building scalable web applications and backend systems with the MERN stack",
+      "while solving real-world problems through clean, efficient software engineering.",
+    ],
   },
   contact: {
     p: "Get in touch",
@@ -67,11 +70,7 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!`,
+      content: `I am a B.Tech Computer Science student at Graphic Era Hill University with a strong interest in backend development and scalable web applications. I enjoy building full-stack projects using the MERN stack and continuously improving my problem-solving skills through Data Structures and Algorithms. My projects focus on solving real-world problems, including disaster management systems, REST APIs, and real-time multiplayer applications. I am currently seeking Software Engineering internship opportunities where I can contribute while learning from experienced engineers.`,
     },
     experience: {
       p: "What I have done so far",

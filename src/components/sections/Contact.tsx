@@ -2,7 +2,6 @@ import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
-import { EarthCanvas } from "../canvas";
 import { SectionWrapper } from "../../hoc";
 import { slideIn } from "../../utils/motion";
 import { config } from "../../constants/config";
@@ -15,7 +14,7 @@ const INITIAL_STATE = Object.fromEntries(
 const emailjsConfig = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
   templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  accessToken: import.meta.env.VITE_EMAILJS_ACCESS_TOKEN,
+  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
 };
 
 const Contact = () => {
@@ -41,13 +40,12 @@ const Contact = () => {
         emailjsConfig.serviceId,
         emailjsConfig.templateId,
         {
-          form_name: form.name,
-          to_name: config.html.fullName,
-          from_email: form.email,
-          to_email: config.html.email,
+          name: form.name,
+          email: form.email,
           message: form.message,
+          time: new Date().toLocaleString(),
         },
-        emailjsConfig.accessToken
+        emailjsConfig.publicKey
       )
       .then(
         () => {
@@ -108,13 +106,26 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
-      >
-        <EarthCanvas />
+        <div className="mt-8 flex gap-4">
+          <a
+            href="https://github.com/dhananjayyy09"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:text-white transition-colors"
+          >
+            GitHub
+          </a>
+          <span className="text-secondary">|</span>
+          <a
+            href="https://www.linkedin.com/in/dhananjay-gupta-b274a3366/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:text-white transition-colors"
+          >
+            LinkedIn
+          </a>
+        </div>
       </motion.div>
     </div>
   );
