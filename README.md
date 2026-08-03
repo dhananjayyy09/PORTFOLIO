@@ -12,7 +12,7 @@ A modern, responsive portfolio website featuring 3D elements built with React.js
 - **Responsive Design**: Mobile-friendly navigation and layout
 - **Smooth Animations**: Framer Motion animations throughout
 
-## Tech Stack
+## Tech Stack 
 
 - **Frontend**: React 18, TypeScript
 - **3D Graphics**: Three.js, React Three Fiber, Drei
